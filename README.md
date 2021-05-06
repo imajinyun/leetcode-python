@@ -26,7 +26,7 @@ python3 -m unittest discover -s ./tests/leetcode -t ./tests/leetcode
 
 |题目|来源|实现|
 |---|---|---|
-|`0001. 两数之和`|[Two Sum](https://leetcode.com/problems/two-sum/)|[Solution](https://github.com/imajinyun/leetcode-php/blob/master/src/leetcode/TwoSum.php)|
+|`0001. 两数之和`|[Two Sum](https://leetcode.com/problems/two-sum/)|[Solution](https://github.com/imajinyun/leetcode-python/blob/master/src/leetcode/TwoSum.py)|
 |`0118. 杨辉三角`|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)|[Solution](https://github.com/imajinyun/leetcode-php/blob/master/src/leetcode/PascalsTriangle.php)|
 |`0026. 删除有序数组中的重复项`|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|[Solution](https://github.com/imajinyun/leetcode-php/blob/master/src/leetcode/RemoveDuplicatesFromSortedArray.php)|
 |`0027. 移除元素`|[Remove Element](https://leetcode.com/problems/remove-element/)||
