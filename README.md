@@ -1,5 +1,7 @@
 # 💫 LeetCode for Python 🐍
 
+[![leetcode-python](https://github.com/imajinyun/leetcode-python/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/imajinyun/leetcode-python/actions/workflows/python-app.yml)
+
 ## Requirements
 
 * Python >= 3.8
