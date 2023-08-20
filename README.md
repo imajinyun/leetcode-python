@@ -1,10 +1,8 @@
-# 💫 LeetCode for Python 🐍
-
-[![leetcode-python](https://github.com/imajinyun/leetcode-python/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/imajinyun/leetcode-python/actions/workflows/python-app.yml)
+# 🚀 🐍 🌈 LeetCode with Python 🔥
 
 ## Requirements
 
-* Python >= 3.8
+* Python >= 3.11
 
 ## Installation
 
