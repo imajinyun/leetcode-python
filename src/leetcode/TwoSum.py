@@ -2,21 +2,33 @@ from typing import List
 
 
 class TwoSum:
-    """0001. (Two Sum)[https://leetcode.com/problems/two-sum/]"""
+    """[0001. Two Sum](https://leetcode.com/problems/two-sum/)"""
 
     @staticmethod
-    def two_sum(nums: List[int], target: int) -> List[int]:
-        for i, numi in enumerate(nums):
-            for j, numj in enumerate(range(i + 1, len(nums))):
-                if numi + numj == target:
-                    return [j, i]
-        return [-1, -1]
+    def twoSum(nums: List[int], target: int) -> List[int]:
+        """Array"""
+        ans, cnt = [-1, -1], len(nums)
+        if cnt <= 0:
+            return ans
 
-    @staticmethod
-    def two_sum2(nums: List[int], target: int) -> List[int]:
-        mps = {}
         for i, num in enumerate(nums):
-            if target - num in mps:
-                return [mps[target - num], i]
+            tmp = False
+            for j in range(i + 1, len(nums)):
+                if num + nums[j] == target:
+                    ans, tmp = [i, j], True
+                    break
+            if tmp:
+                break
+        return ans
+
+    @staticmethod
+    def twoSum2(nums: List[int], target: int) -> List[int]:
+        """Hash Table"""
+        ans, mps = [-1, -1], {}
+        for i, num in enumerate(nums):
+            val = target - num
+            if val in mps:
+                ans = [mps[val], i]
+                break
             mps[num] = i
-        return [-1, -1]
+        return ans

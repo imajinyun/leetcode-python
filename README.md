@@ -14,7 +14,11 @@ cd leetcode-python
 ## Usage
 
 ```bash
-python3 -m unittest discover -s ./tests/leetcode -t ./tests/leetcode
+python3 -m unittest discover -s ./test/leetcode -t ./test/leetcode
+
+OR
+
+pytest -v
 ```
 
 ## Contents

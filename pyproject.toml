@@ -1,17 +1,30 @@
 [tool.poetry]
-name = "leetcode-python"
-version = "0.1.0"
-description = ""
 authors = ["imajinyun <imajinyun@gmail.com>"]
+description = ""
 license = "MIT"
-readme = "README.md"
+name = "leetcode-python"
 packages = [{include = "leetcode_python"}]
+readme = "README.md"
+version = "0.1.0"
 
 [tool.poetry.dependencies]
-python = "^3.11"
 pytest = "^7.4.0"
+python = "^3.11"
 
+[tool.pylint]
+disable = [
+  "missing-module-docstring",
+  "missing-class-docstring",
+  "missing-function-docstring",
+  "invalid-name",
+]
+
+[tool.pytest.ini_options]
+markers = [
+  "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+]
+python_files = ["tests.py", "test_*.py", "*_tests.py"]
 
 [build-system]
-requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
