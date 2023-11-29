@@ -9,6 +9,8 @@
 ```bash
 git clone git@github.com:imajinyun/leetcode-python.git
 cd leetcode-python
+poetry instal
+poetry env info
 ```
 
 ## Usage

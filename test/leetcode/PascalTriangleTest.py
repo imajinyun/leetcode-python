@@ -1,8 +1,8 @@
 from src.leetcode.PascalTriangle import PascalTriangle
 
 
-class TestPascalTriangle:
-    def test_generate(self) -> None:
+class PascalTriangleTest:
+    def testTenerate(self) -> None:
         assert [
             [1],
             [1, 1],
@@ -12,7 +12,7 @@ class TestPascalTriangle:
         ] == PascalTriangle.generate(5)
         assert [[1]] == PascalTriangle.generate(1)
 
-    def test_generate2(self) -> None:
+    def testTenerate2(self) -> None:
         assert [
             [1],
             [1, 1],
