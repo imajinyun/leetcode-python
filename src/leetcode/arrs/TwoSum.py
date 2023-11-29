@@ -6,7 +6,6 @@ class TwoSum:
 
     @staticmethod
     def twoSum(nums: List[int], target: int) -> List[int]:
-        """Array"""
         ans, cnt = [-1, -1], len(nums)
         if cnt <= 0:
             return ans
@@ -19,16 +18,4 @@ class TwoSum:
                     break
             if tmp:
                 break
-        return ans
-
-    @staticmethod
-    def twoSum2(nums: List[int], target: int) -> List[int]:
-        """Hash Table"""
-        ans, mps = [-1, -1], {}
-        for i, num in enumerate(nums):
-            val = target - num
-            if val in mps:
-                ans = [mps[val], i]
-                break
-            mps[num] = i
         return ans

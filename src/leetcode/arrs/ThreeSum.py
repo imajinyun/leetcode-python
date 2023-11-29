@@ -2,6 +2,8 @@ from typing import List
 
 
 class ThreeSum:
+    """[0015. 3Sum](https://leetcode.cn/problems/3sum/)"""
+
     @staticmethod
     def threeSum(nums: List[int]) -> List[List[int]]:
         ans, n = [], len(nums)

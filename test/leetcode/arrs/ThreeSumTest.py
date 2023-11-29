@@ -1,4 +1,4 @@
-from src.leetcode.ThreeSum import ThreeSum
+from src.leetcode.arrs.ThreeSum import ThreeSum
 
 
 class ThreeSumTest:
